@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pre Workout Supplement Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <!-- header and navigation elements -->
+  <header>
+    <div class="container">
+      <h1>Exposing the Truth About Pre Workout Supplements</h1>
+      <p>Our mission is to provide honest and accurate information about pre workout supplements and help users make informed decisions about what products to use.</p>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Information</a></li>
+        <li><a href="#">Calculator Tool</a></li>
+        <li><a href="resources.html">Resources and References</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <h2>Pre Workout Supplement Calculator</h2>
+      <p>Use our calculator tool to evaluate the ingredients and dosage of different pre workout supplements. Simply enter the amount of each ingredient in milligrams and click 'Calculate' to see the scores for the product.</p>
+      <form id="calculator-form">
+        <label for="product-name">Product Name:</label><br>
+        <input type="text" id="product-name"><br>
+        <div id="scores">
+          <p>Total score: <span id="totalScore"></span></p>
+          <p>Energy score: <span id="energyScore"></span></p>
+          <p>Strength score: <span id="strengthScore"></span></p>
+          <p>Endurance score: <span id="enduranceScore"></span></p>
+        </div>
+        <label for="creatine">Creatine (mg):</label><br>
+        <input type="number" id="creatine"><br>
+        <label for="caffeine">Caffeine (mg):</label><br>
+        <input type="number" id="caffeine"><br>
+        <label for="citrulline">Citrulline (mg):</label><br>
+        <input type="number" id="citrulline"><br>
+        <label for="beta-alanine">Beta Alanine (mg):</label><br>
+        <input type="number" id="beta-alanine"><br>
+        <input type="submit" value="Calculate">
+      </form>
+    </div>
+  </main>
+  <!-- footer element -->
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2021 Exposing the Truth About Pre Workout Supplements</p>
+    </div>
+  </footer>
+</body>
+<script src="calculator.js"></script>
+</html>
