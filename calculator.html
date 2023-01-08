@@ -12,40 +12,74 @@
       <p>Our mission is to provide honest and accurate information about pre workout supplements and help users make informed decisions about what products to use.</p>
     </div>
   </header>
-  <nav>
-    <div class="container">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="info.html">Information</a></li>
-        <li><a href="#">Calculator Tool</a></li>
-        <li><a href="resources.html">Resources and References</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Information</a></li>
+          <li><a href="#">Calculator Tool</a></li>
+          <li><a href="resources.html">Resources and References</a></li>
+        </ul>
+      </div>
+    </nav>
   <main>
     <div class="container">
       <h2>Pre Workout Supplement Calculator</h2>
       <p>Use our calculator tool to evaluate the ingredients and dosage of different pre workout supplements. Simply enter the amount of each ingredient in milligrams and click 'Calculate' to see the scores for the product.</p>
-      <form id="calculator-form">
-        <label for="product-name">Product Name:</label><br>
-        <input type="text" id="product-name"><br>
-        <div id="scores">
-          <p>Total score: <span id="totalScore"></span></p>
-          <p>Energy score: <span id="energyScore"></span></p>
-          <p>Strength score: <span id="strengthScore"></span></p>
-          <p>Endurance score: <span id="enduranceScore"></span></p>
-        </div>
-        <label for="creatine">Creatine (mg):</label><br>
-        <input type="number" id="creatine"><br>
-        <label for="caffeine">Caffeine (mg):</label><br>
-        <input type="number" id="caffeine"><br>
-        <label for="citrulline">Citrulline (mg):</label><br>
-        <input type="number" id="citrulline"><br>
-        <label for="beta-alanine">Beta Alanine (mg):</label><br>
-        <input type="number" id="beta-alanine"><br>
-        <input type="submit" value="Calculate">
-      </form>
+      
+
+<!--
+    <button id="add-creatine-button">Add Creatine</button>
+    <button id="add-caffeine-button">Add Caffeine</button>
+    <button id="add-citrulline-button">Add Citrulline</button>
+    <button id="add-beta-alanine-button">Add Beta Alanine</button>
+-->
+
+
+
+  <form id="calculator-form">
+    <label for="product-name">Product Name:</label><br>
+    <input type="text" id="product-name"><br>
+    <div id="scores">
+      <p>Total score: <span id="totalScore"></span></p>
+      <p>Energy score: <span id="energyScore"></span></p>
+      <p>Strength score: <span id="strengthScore"></span></p>
+      <p>Endurance score: <span id="enduranceScore"></span></p>
     </div>
+
+    <div class="addIngredient">
+      <select id="ingredients-select">
+        <option value="creatine-container">Creatine</option>
+        <option value="caffeine-container">Caffeine</option>
+        <option value="citrulline-container">Citrulline</option>
+        <option value="beta-alanine-container">Beta Alanine</option>
+      </select>
+
+      <button id="add-ingredient-button">Add Ingredient</button>
+    </div>
+
+  
+    <div id="creatine-container" style="display: none;">
+      <label for="creatine">Creatine (mg):</label><br>
+      <input type="number" id="creatine"><br>
+    </div>
+    <div id="caffeine-container" style="display: none;">
+      <label for="caffeine-input">Caffeine (mg):</label><br>
+      <input type="number" id="caffeine"><br>
+    </div>
+    <div id="citrulline-container" style="display: none;">
+      <label for="citrulline-input">Citrulline (mg):</label><br>
+      <input type="number" id="citrulline"><br>
+    </div>
+    <div id="beta-alanine-container" style="display: none;">
+      <label for="beta-alanine">Beta Alanine (mg):</label><br>
+      <input type="number" id="beta-alanine"><br>
+    </div>
+    <input type="submit" value="Calculate">
+  </form>
+  
+
+
   </main>
   <!-- footer element -->
   <footer>
