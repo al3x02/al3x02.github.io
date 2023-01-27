@@ -4,42 +4,29 @@
   <title>Pre Workout Supplement Calculator</title>
   <link rel="stylesheet" href="calculator.css">
 </head>
+
 <body>
-  <!-- header and navigation elements -->
+
+
   <header>
     <div class="container">
       <h1>Exposing the Truth About Pre Workout Supplements</h1>
       <p>Our mission is to provide honest and accurate information about pre workout supplements and help users make informed decisions about what products to use.</p>
     </div>
   </header>
-    <nav>
-      <div class="container">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="info.html">Information</a></li>
-          <li><a href="#">Calculator Tool</a></li>
-          <li><a href="resources.html">Resources and References</a></li>
-        </ul>
-      </div>
-    </nav>
-  <main>
+  <nav>
     <div class="container">
-      <h2>Pre Workout Supplement Calculator</h2>
-      <p>Use our calculator tool to evaluate the ingredients and dosage of different pre workout supplements. Simply enter the amount of each ingredient in milligrams and click 'Calculate' to see the scores for the product.</p>
-      
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Information</a></li>
+        <li><a href="#">Calculator Tool</a></li>
+        <li><a href="resources.html">Resources and References</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
 
-<!--
-    <button id="add-creatine-button">Add Creatine</button>
-    <button id="add-caffeine-button">Add Caffeine</button>
-    <button id="add-citrulline-button">Add Citrulline</button>
-    <button id="add-beta-alanine-button">Add Beta Alanine</button>
--->
-
-
-
-  <form id="calculator-form">
-    <label for="product-name">Product Name:</label><br>
-    <input type="text" id="product-name"><br>
     <div id="scores">
       <p>Total score: <span id="totalScore"></span></p>
       <p>Energy score: <span id="energyScore"></span></p>
@@ -47,40 +34,25 @@
       <p>Endurance score: <span id="enduranceScore"></span></p>
     </div>
 
-    <div class="addIngredient">
-      <select id="ingredients-select">
-        <option value="creatine-container">Creatine</option>
-        <option value="caffeine-container">Caffeine</option>
-        <option value="citrulline-container">Citrulline</option>
-        <option value="beta-alanine-container">Beta Alanine</option>
-      </select>
+    <select id="nameSelect">
+      <option value="creatine">creatine</option>
+      <option value="citrulline">citrulline</option>
+      <option value="caffeine">caffeine</option>
+      <option value="betaAlanine">beta alanine</option>
+    </select>
+    <button id="addBtn">Add</button>
 
-      <button id="add-ingredient-button">Add Ingredient</button>
-    </div>
+    <button id="calculate-score-btn">Calculate Score</button>
 
-  
-    <div id="creatine-container" style="display: none;">
-      <label for="creatine">Creatine (mg):</label><br>
-      <input type="number" id="creatine"><br>
-    </div>
-    <div id="caffeine-container" style="display: none;">
-      <label for="caffeine-input">Caffeine (mg):</label><br>
-      <input type="number" id="caffeine"><br>
-    </div>
-    <div id="citrulline-container" style="display: none;">
-      <label for="citrulline-input">Citrulline (mg):</label><br>
-      <input type="number" id="citrulline"><br>
-    </div>
-    <div id="beta-alanine-container" style="display: none;">
-      <label for="beta-alanine">Beta Alanine (mg):</label><br>
-      <input type="number" id="beta-alanine"><br>
-    </div>
-    <input type="submit" value="Calculate">
-  </form>
-  
-
+    <div id="ingredientsList"></div>
 
   </main>
+
+</body>
+
+
+  <script src="calculator.js"></script>
+
   <!-- footer element -->
   <footer>
     <div class="container">
@@ -88,5 +60,5 @@
     </div>
   </footer>
 </body>
-<script src="calculator.js"></script>
+
 </html>
